@@ -287,7 +287,7 @@ box-sizing: border-box;
 /* CASES SECTION//////////////////////////////////////////////////////////// */
 
 .cases {
-    padding: 88px 0;
+    padding: 64px 0;
 }
 
 .cases__title {
@@ -360,4 +360,88 @@ grid-column-start: 1;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 0px;
+}
+
+/* POSTERS SECTION//////////////////////////////////////////////////////////// */
+
+
+
+.posters__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.posters__title {
+    font-family: var(--second-family);
+font-weight: 600;
+font-size: 40px;
+line-height: 102%;
+color: var(--color\chernyy-100);
+}
+
+.posters__nav {
+    display: flex;
+    gap: 8px;
+}
+
+.posters__prev,
+.posters__next {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.posters__slider {
+    overflow: hidden;
+}
+
+.posters__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.posters__card-tag {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color\chernyy-100);
+    margin-bottom: 16px;
+}
+
+.posters__card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.posters__card-title {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--color\chernyy-100);
+    margin-bottom: 12px;
+}
+
+.posters__card-desc {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color\chernyy-100);
+    margin-bottom: 24px;
+}
+
+.posters__card-btn {
+    align-self: flex-start;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
 }
