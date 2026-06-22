@@ -202,6 +202,8 @@ box-sizing: border-box;
     height: 570px;
 }
 
+
+
 /* ABOUT ME//////////////////////////////////////////////////////////// */
 
 .about {
@@ -280,4 +282,82 @@ box-sizing: border-box;
     cursor: pointer;
     border: none;
     box-sizing: border-box;
+}
+
+/* CASES SECTION//////////////////////////////////////////////////////////// */
+
+.cases {
+    padding: 88px 0;
+}
+
+.cases__title {
+    font-family: var(--second-family);
+font-weight: 600;
+font-size: 96px;
+line-height: 102%;
+color: var(--color\chernyy-100);
+    margin-bottom: 64px;
+}
+
+.cases__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cases__card {
+    display: flex;
+    flex-direction: column;
+    max-width: 325px;
+}
+
+.cases__card-tag {
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 24px;
+color: var(--color\chernyy-100);
+padding-bottom: 24px;
+}
+
+.cases__card img {
+    max-width: 325px;
+    display: block;
+    border-radius: 50px;
+}
+
+.cases__card-title {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--color\chernyy-100);
+    margin: 24px 0 16px;
+}
+
+.cases__card-desc {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+color: var(--color\chernyy-100);
+grid-column-start: 1;
+    grid-row-start: 2;
+        width: 110%;
+}
+
+.cases__card-btn {
+  grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+     justify-self: end;
+
+}
+
+.cases__card_wrap{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px;
 }
