@@ -184,6 +184,7 @@ box-sizing: border-box;
     font-weight: 400;
     font-size: 24px;
     color: var(--color\chernyy-100);
+    line-height: normal;
 }
 
 .hero__left {
@@ -266,6 +267,8 @@ box-sizing: border-box;
     font-size: 16px;
     color: var(--color\-belyy-100);
     margin-bottom: 24px;
+    line-height: normal;
+
 }
 
 .about__text--accent {
