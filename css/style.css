@@ -1,6 +1,7 @@
 :root {
 	--color\chernyy-100: #141414;
 	--color\-belyy-100: #fff;
+    --color\siniy: #2e62f2;
 }
 
 :root {
@@ -163,7 +164,7 @@ box-sizing: border-box;
     padding: 24px;
     width: 325px;
     max-height: 65px;
-    background: var(--color\chernyy-100);
+    background: var(--color\siniy);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,11 +281,11 @@ box-sizing: border-box;
     padding: 24px;
     width: 325px;
     height: 65px;
-    background: var(--color\-belyy-100);
+    background: var(--color\siniy);
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 24px;
-    color: var(--color\chernyy-100);
+    color: var(--color\-belyy-100);
     margin-bottom: 40px;
     display: flex;
     align-items: center;
@@ -499,4 +500,117 @@ color: var(--color\chernyy-100);
     border: none;
     padding: 0;
     cursor: pointer;
+}
+
+/* SERVICES SECTION//////////////////////////////////////////////////////////// */
+
+.services {
+    padding: 40px 0;
+    background: var(--color\chernyy-100);
+    text-align: center;
+}
+
+.services__title {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 102%;
+    color: var(--color\-belyy-100);
+    margin-bottom: 64px;
+}
+
+.services__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.services__card {
+    flex: 1 1 calc(25% - 20px);
+    max-width: 325px;
+
+    padding: 136px 40px 32px 32px;
+    border-radius: 50px;
+    min-height: 359px;
+    box-sizing: border-box;
+    background: var(--color\-belyy-100);
+    display: flex;
+}
+.services__card:last-child .services__card-footer {
+    display: block;
+}
+
+.services__card-inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+}
+
+.services__card-title {
+   font-family: var(--font-family);
+font-weight: 600;
+font-size: 24px;
+color: var(--color\chernyy-100);
+     min-width: 282px;
+margin-bottom: 16px;
+}
+
+.services__card-desc {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+color: var(--color\chernyy-100);
+    min-width: 282px;
+}
+
+
+.services__card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.services__card:last-child .services__card-footer {
+    display: block;
+}
+
+.services__card-price {
+  font-family: var(--font-family);
+font-weight: 600;
+font-size: 20px;
+color: var(--color\chernyy-100);
+}
+
+.services__card-deadline {
+   font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+color: var(--color\chernyy-100);
+}
+
+.services__button {
+    width: 100%;
+    border-radius: 50px;
+    padding: 24px;
+    height: 65px;
+    background: var(--color\siniy);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--color\-belyy-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    box-sizing: border-box;
+}
+
+.services__button:hover {
+    border: 1px solid var(--color\-belyy-100);
+    background: transparent;
+    color: var(--color\-belyy-100);
 }
