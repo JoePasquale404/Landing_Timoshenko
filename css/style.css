@@ -194,6 +194,7 @@ box-sizing: border-box;
     flex-wrap: wrap;
     align-content: space-between;
     height: 570px;
+        z-index: 2; 
 }
 
 .hero__center {
@@ -214,6 +215,7 @@ box-sizing: border-box;
 .hero__image {
     animation: heroImageAppear 0.8s ease-out both;
     transform-origin: center;
+    pointer-events: none;
 }
 
 @keyframes heroImageAppear {
@@ -235,15 +237,15 @@ box-sizing: border-box;
 }
 
 .hero__title {
-    animation-delay: 0.1s;
-}
-
-.hero__left {
     animation-delay: 0.3s;
 }
 
-.hero__right {
+.hero__left {
     animation-delay: 0.5s;
+}
+
+.hero__right {
+    animation-delay: 0.7s;
 }
 
 @keyframes heroSlideDown {
