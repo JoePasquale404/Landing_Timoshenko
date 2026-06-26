@@ -211,6 +211,52 @@ box-sizing: border-box;
     height: 570px;
 }
 
+.hero__image {
+    animation: heroImageAppear 0.8s ease-out both;
+    transform-origin: center;
+}
+
+@keyframes heroImageAppear {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.hero__title,
+.hero__left,
+.hero__right {
+    animation: heroSlideDown 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+.hero__title {
+    animation-delay: 0.1s;
+}
+
+.hero__left {
+    animation-delay: 0.3s;
+}
+
+.hero__right {
+    animation-delay: 0.5s;
+}
+
+@keyframes heroSlideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 
 /* ABOUT ME//////////////////////////////////////////////////////////// */
