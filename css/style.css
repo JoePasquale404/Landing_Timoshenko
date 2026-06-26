@@ -777,6 +777,12 @@ color: var(--color\chernyy-100);
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.contacts__socials a:hover {
+    opacity: 0.7;
+    transform: scale(1.08);
 }
 
 .contacts__form {
@@ -867,4 +873,62 @@ color: #1f1f1f;
     border: 1px solid var(--color\chernyy-100);
     background: transparent;
     color: var(--color\chernyy-100);
+}
+
+/* FOOTER SECTION//////////////////////////////////////////////////////////// */
+
+.site-footer {
+    background: var(--color\chernyy-100);
+   
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.footer__nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.footer__nav a {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+color: var(--color\-belyy-100);
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.footer__nav a:hover {
+    transform: scale(1.08);
+}
+
+.footer__divider {
+    width: 100vw;
+    height: 1px;
+    background: var(--color\-belyy-100);
+    margin-left: calc(-50vw + 50%);
+    position: relative;
+    left: 0;
+}
+
+.footer__bottom {
+    padding: 40px 0;
+}
+
+.footer__policy {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+color: var(--color\-belyy-100);
+    text-decoration: none;
+}
+
+.footer__policy:hover {
+    opacity: 0.7;
 }
