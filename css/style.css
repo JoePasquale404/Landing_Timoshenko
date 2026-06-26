@@ -530,7 +530,7 @@ color: var(--color\chernyy-100);
     flex: 1 1 calc(25% - 20px);
     max-width: 325px;
 
-    padding: 136px 40px 32px 32px;
+    padding: 136px 40px 32px 23px;
     border-radius: 50px;
     min-height: 359px;
     box-sizing: border-box;
@@ -569,6 +569,8 @@ color: var(--color\chernyy-100);
     justify-content: space-between;
     align-items: center;
     margin-top: auto;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .services__card:last-child .services__card-footer {
