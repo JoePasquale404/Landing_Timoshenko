@@ -142,7 +142,7 @@ box-sizing: border-box;
 }
 
 .hero__tag {
-    border: 1px solid var(--color\chernyy-100);
+    border: 1px solid var(  --color\siniy);
     border-radius: 50px;
     padding: 10px;
     font-family: var(--font-family);
@@ -640,7 +640,7 @@ color: var(--color\chernyy-100);
 }
 
 .stages__card {
-    min-width: 477px;
+    min-width: 514px;
     border-left: 1px dashed var(--color\siniy);
     
 }
@@ -665,15 +665,15 @@ color: var(--color\chernyy-100);
 }
 
 .stages__card--bottom {
-    min-width: 477px;
+    min-width: 470px;
     border-left: 1px dashed var(--color\siniy);
 }
 
 .stages__card--bottom:first-child {
-    margin-left: 13px;
+    margin-left: 20px;
     
     min-width: 330px;
-    margin-right: 82px;
+    margin-right: 100px;
 }
 
 .stages__card--bottom .stages__card-title {
@@ -707,7 +707,7 @@ color: var(--color\chernyy-100);
     top: 50%;
     left: 0;
     right: 0;
-    height: 2px;
+    height: 1px;
     background: var(--color\siniy);
     transform: translateY(-50%);
 }
