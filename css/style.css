@@ -1006,11 +1006,14 @@ color: var(--color\-belyy-100);
 
 .hero__marquee {
     display: none;
+    padding: 0 40px;
+    box-sizing: border-box;
 }
 
 .hero__marquee-track {
     overflow: hidden;
-    width: 100%;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
 }
 
 .hero__marquee-inner {
