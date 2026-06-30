@@ -186,6 +186,7 @@ box-sizing: border-box;
     font-size: 24px;
     color: var(--color\chernyy-100);
     line-height: normal;
+        margin-right: 30px;
 }
 
 .hero__left {
@@ -213,6 +214,8 @@ box-sizing: border-box;
 }
 
 .hero__image {
+    max-width: 100%;
+    height: auto;
     animation: heroImageAppear 0.8s ease-out both;
     transform-origin: center;
     pointer-events: none;
@@ -983,7 +986,7 @@ color: var(--color\-belyy-100);
     opacity: 0.7;
 }
 
-.hero,.about,.cases,.posters,.services,.stages,.contacts, .site-footer{display: none;}
+.about,.cases,.posters,.services,.stages,.contacts, .site-footer{display: none;}
 
 /* Burger button — скрыт на десктопе */
 .burger-btn {
@@ -999,22 +1002,142 @@ color: var(--color\-belyy-100);
     display: none;
 }
 
+/* HERO MARQUEE (показать на <= 1070px) */
+
+.hero__marquee {
+    display: none;
+}
+
+.hero__marquee-track {
+    overflow: hidden;
+    width: 100%;
+}
+
+.hero__marquee-inner {
+    display: flex;
+    gap: 8px;
+    white-space: nowrap;
+    animation: marquee-ltr 20s linear infinite;
+    width: max-content;
+}
+
+.hero__marquee-inner .hero__tag {
+    margin-right: 0;
+}
+
+@keyframes marquee-ltr {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+}
+
 /*АДАПТИВ........................................ */
+@media (max-width: 1400px) {
+    .hero__title{font-size: 150px;}
+    .hero__tag{margin-right: 25px;}
+    .hero__description{margin-right: 30px;}
+}
+@media (max-width: 1300px) {
+    .hero__center{left: 13%;}
+    .hero__description{font-size: 18px;margin-left: 50px; margin-right: 0px;}
+        
+}
+@media (max-width: 1350px) {
+  
+    .hero__description{font-size: 18px;margin-left: 50px;}
+        
+}
 
 
+@media (max-width: 1200px) {
+    .hero__title{font-size: 130px;}
+    .hero__center{left: 10%;top: -64%;}
+    .hero__right{height: 610px;}
+    .hero__left{height: 610px;}
+}
+@media (max-width: 1280px) {
+   .hero__tag{margin-right: 20px;}
+}
+@media (max-width: 1255px) {
+   .hero__tag{margin-right: 8px;}
+}
+
+@media (max-width: 1190px) {
+    .hero__tag{font-size: 14px;}
+    .hero__center {left: 11%;top: -61%;}
+}
+@media (max-width: 1170px) {
+   
+}
+@media (max-width: 1100px) {
+       
+            .hero__center {
+        left: 5%;
+        top: -270px;
+}
+.hero__button{width: 275px;}
+}
+
+@media (max-width: 1070px) {
+    .hero__left,
+    .hero__right {
+        display: none;
+    }
+
+    .hero__marquee {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        margin-top: 70%;
+    }
+        .hero__button {
+        width: 325px;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .hero__description{font-size: 16px;margin-left: 50px;}
+}
+
+
+@media (max-width: 1000px) {
+    .hero__title{font-size: 100px;}
+        
+        .hero__center {
+        left: 4%;
+        top: -260px;
+    }
+    .hero__marquee {
+        margin-top: 75%;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero__center {
+        left: 4%;
+        top: -220px;
+    }
+}
 @media (max-width: 800px) {
     .header-nav ul {
         gap: 25px;
     }
     .container{padding: 0 20px;}
+    .hero__title{font-size: 80px;}
+    .hero__center {
+        
+        top: -200px;
+    }
 }
+
 
 @media (max-width: 750px)
 
 
 {
 
-.header-container{padding: 20px 20px 0px 20px;}
+.header-container{padding: 20px 0px 0px 0px;}
 
     .header-nav,
     .header-socials {
@@ -1120,4 +1243,54 @@ color: var(--color\chernyy-100);
         gap: 8px;
     }
     .header-divider {display: none;}
+    .hero__title{font-size: 50px;padding-top: 16px;}
+    .hero__center {
+        top: -193px;
+    }
+        
+}
+@media (max-width: 650px) {
+    .hero__center {
+        top: -170px;
+    }
+}
+@media (max-width: 600px) {
+    .hero__center {
+        top: -153px;
+    }
+    .hero__button{
+padding: 16px 112px;
+width: 350px;
+height: 46px;}
+}
+@media (max-width: 550px) {
+    .hero__center {
+        top: -145px;
+    }
+        .hero__marquee {
+        margin-top: 80%;
+    }
+}
+@media (max-width: 500px) {
+    .hero__center {
+        top: -130px;
+    }
+}
+@media (max-width: 450px) {
+    .hero__center {
+        top: -120px;
+    }
+}
+@media (max-width: 430px) {
+    .hero__title{font-size: 45px;}
+}
+@media (max-width: 450px) {
+    .hero__center {
+        top: -105px;
+    }
+}
+@media (max-width: 400px) {
+    .hero__center {
+        top: -109px;
+    }
 }
