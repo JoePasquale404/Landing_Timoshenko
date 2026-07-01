@@ -1036,10 +1036,6 @@ color: var(--color\-belyy-100);
     width: 100%;
 }
 
-.hero__marquee .hero__button {
-    margin: 0 40px;
-}
-
 .hero__marquee-slider .swiper-wrapper {
     transition-timing-function: linear !important;
 }
@@ -1128,8 +1124,11 @@ color: var(--color\-belyy-100);
         gap: 16px;
         margin-top: 70%;
     }
+    .hero__marquee .container {
+        width: 100%;
+    }
         .hero__button {
-        width: 325px;
+        width: 100%;
     }
 }
 
@@ -1410,8 +1409,9 @@ color: var(--color\chernyy-100);
     }
     .hero__button{
 padding: 16px 112px;
-width: 350px;
-height: 46px;}
+width: 100%;
+height: 46px;
+font-size: 20px;}
 }
 @media (max-width: 550px) {
     .hero__center {
