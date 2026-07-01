@@ -1214,6 +1214,7 @@ color: var(--color\-belyy-100);
     }
     .about__title{font-size: 60px;}
     .services__title{font-size: 60px;}
+    .stages__title{font-size: 60px;}
 
 
 
@@ -1372,6 +1373,9 @@ color: var(--color\chernyy-100);
         .services__title {
         font-size: 36px;
     }
+        .stages__title {
+        font-size: 36px;
+    }
     .services__title{margin-bottom: 36px;}
 }
 @media (max-width: 700px){
@@ -1422,14 +1426,16 @@ height: 46px;}
     .hero__center {
         top: -120px;
     }
+    .cases__card {max-width: initial;}
 }
 @media (max-width: 430px) {
     .hero__title{font-size: 45px;}
 }
 @media (max-width: 450px) {
     .hero__center {
-        top: -105px;
+        top: -120px;
     }
+    .services__card{max-width: 100%;}
 }
 @media (max-width: 400px) {
     .hero__center {
@@ -1438,4 +1444,4 @@ height: 46px;}
     .about__text{max-width: 350px;}
     .cases__card {max-width: initial}
     .cases__card:last-child .cases__card-desc {width: 191px}
-}}
+}
