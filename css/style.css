@@ -273,7 +273,10 @@ box-sizing: border-box;
 .br-400 {
     display: inline;
 }
-
+@media (max-width: 1440px) {
+    .services__list{justify-content: center;}
+    .cases__list{justify-content: center;}
+}
 @media (max-width: 1400px) {
     .br {
         display: inline;
