@@ -546,7 +546,7 @@ color: var(--color\chernyy-100);
     height: auto;
     display: block;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 88px;
 }
 
 .posters__card-title {
@@ -1006,7 +1006,7 @@ color: var(--color\-belyy-100);
     opacity: 0.7;
 }
 
-.posters,.services,.stages,.contacts, .site-footer{display: none;}
+.stages,.contacts, .site-footer{display: none;}
 
 /* Burger button — скрыт на десктопе */
 .burger-btn {
@@ -1193,6 +1193,7 @@ color: var(--color\-belyy-100);
     .about__button:hover {
         height: 46px;
     }
+    
 
 @media (max-width: 1000px) {
     .hero__title{font-size: 100px;}
@@ -1212,12 +1213,13 @@ color: var(--color\-belyy-100);
         top: -220px;
     }
     .about__title{font-size: 60px;}
+    .services__title{font-size: 60px;}
 
 
 
 
 .cases {
-    padding: 44px 0;
+    padding: 44px 0px 36px 0px; 
 }
 .cases__title {font-size: 36px;    margin-bottom: 24px;}
 
@@ -1226,6 +1228,7 @@ color: var(--color\-belyy-100);
 .cases__card-title{font-size: 20px;margin: 23px 0 12px;}
 .cases__card-desc{font-size: 16px;width: 278px;}
 .btn-default{width: 50px;height: 50px;}
+.btn-hover{width: 50px;height: 50px;}
 }
 .cases__card img{max-width: initial;}
 @media (max-width: 800px) {
@@ -1366,7 +1369,33 @@ color: var(--color\chernyy-100);
         .about__title {
         font-size: 36px;
     }
+        .services__title {
+        font-size: 36px;
+    }
+    .services__title{margin-bottom: 36px;}
 }
+@media (max-width: 700px){
+}
+.posters__header{flex-direction: column;text-align: center;    margin-bottom: 16px; }
+.posters__title{font-size: 24px;margin-bottom: 24px;}
+.posters__nav {gap: 10px}
+.posters__prev, .posters__next{width: 31px; height: 31px;}
+.services__card-title{font-size:20px ;}
+.services__list {justify-content: center;gap: 16px;}
+.services__card {
+    
+    padding: 136px 32px 32px 23px;}
+    .services {
+    padding: 20px 0;}
+    .posters__card img {
+  
+    margin-bottom: 44px;
+}
+.services__button{height: 46px;}
+}
+
+
+
 @media (max-width: 600px) {
     .hero__center {
         top: -153px;
