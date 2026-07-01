@@ -1010,27 +1010,19 @@ color: var(--color\-belyy-100);
     box-sizing: border-box;
 }
 
-.hero__marquee-track {
+.hero__marquee-slider {
     overflow: hidden;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
 }
 
-.hero__marquee-inner {
-    display: flex;
-    gap: 8px;
-    white-space: nowrap;
-    animation: marquee-ltr 20s linear infinite;
-    width: max-content;
+.hero__marquee-slider .swiper-wrapper {
+    transition-timing-function: linear !important;
 }
 
-.hero__marquee-inner .hero__tag {
+.hero__marquee-slider .hero__tag {
     margin-right: 0;
-}
-
-@keyframes marquee-ltr {
-    0% { transform: translateX(-50%); }
-    100% { transform: translateX(0); }
+    flex-shrink: 0;
 }
 
 /*АДАПТИВ........................................ */

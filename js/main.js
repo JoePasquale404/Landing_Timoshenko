@@ -52,3 +52,32 @@ new Swiper('.posters__slider', {
         prevEl: '.posters__prev',
     },
 });
+
+(function() {
+    const marqueeEl = document.querySelector('.hero__marquee-slider');
+    if (!marqueeEl) return;
+
+    let swiperInstance = null;
+
+    function initMarquee() {
+        if (window.innerWidth <= 1070 && !swiperInstance) {
+            swiperInstance = new Swiper(marqueeEl, {
+                slidesPerView: 'auto',
+                spaceBetween: 40,
+                loop: true,
+                speed: 5000,
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false,
+                },
+                allowTouchMove: false,
+            });
+        } else if (window.innerWidth > 1070 && swiperInstance) {
+            swiperInstance.destroy(true, true);
+            swiperInstance = null;
+        }
+    }
+
+    initMarquee();
+    window.addEventListener('resize', initMarquee);
+})();
