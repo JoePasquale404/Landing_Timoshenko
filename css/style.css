@@ -1020,6 +1020,10 @@ color: var(--color\-belyy-100);
     transition-timing-function: linear !important;
 }
 
+.hero__marquee-slider .swiper-slide {
+    width: auto !important;
+}
+
 .hero__marquee-slider .hero__tag {
     margin-right: 0;
     flex-shrink: 0;
