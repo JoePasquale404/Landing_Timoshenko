@@ -1006,7 +1006,7 @@ color: var(--color\-belyy-100);
     opacity: 0.7;
 }
 
-.cases,.posters,.services,.stages,.contacts, .site-footer{display: none;}
+.posters,.services,.stages,.contacts, .site-footer{display: none;}
 
 /* Burger button — скрыт на десктопе */
 .burger-btn {
@@ -1109,6 +1109,7 @@ color: var(--color\-belyy-100);
         top: -270px;
 }
 .hero__button{width: 275px;}
+  .cases__list {justify-content: center;}
 }
 
 @media (max-width: 1070px) {
@@ -1176,6 +1177,7 @@ color: var(--color\-belyy-100);
         .about__text--accent {
         margin-bottom: 68px;
     }
+   
 }
 
 @media (max-width: 1010px) {
@@ -1210,7 +1212,22 @@ color: var(--color\-belyy-100);
         top: -220px;
     }
     .about__title{font-size: 60px;}
+
+
+
+
+.cases {
+    padding: 44px 0;
 }
+.cases__title {font-size: 36px;    margin-bottom: 24px;}
+
+.cases__card-tag{font-size: 20px;padding-bottom: 16px;}
+.cases__list {gap: 16px;}
+.cases__card-title{font-size: 20px;margin: 23px 0 12px;}
+.cases__card-desc{font-size: 16px;width: 278px;}
+.btn-default{width: 50px;height: 50px;}
+}
+.cases__card img{max-width: initial;}
 @media (max-width: 800px) {
     .header-nav ul {
         gap: 25px;
@@ -1339,6 +1356,7 @@ color: var(--color\chernyy-100);
     .hero__center {
         top: -193px;
     }
+   
         
 }
 @media (max-width: 650px) {
@@ -1389,4 +1407,6 @@ height: 46px;}
         top: -109px;
     }
     .about__text{max-width: 350px;}
+    .cases__card {max-width: initial}
+    .cases__card:last-child .cases__card-desc {width: 191px}
 }}
