@@ -63,14 +63,15 @@ new Swiper('.posters__slider', {
         if (window.innerWidth <= 1070 && !swiperInstance) {
             swiperInstance = new Swiper(marqueeEl, {
                 slidesPerView: 'auto',
-                spaceBetween: 40,
+                spaceBetween: 8,
                 loop: true,
+                rtl: true,
                 speed: 5000,
                 autoplay: {
                     delay: 0,
                     disableOnInteraction: false,
                 },
-                allowTouchMove: false,
+                grabCursor: true,
             });
         } else if (window.innerWidth > 1070 && swiperInstance) {
             swiperInstance.destroy(true, true);

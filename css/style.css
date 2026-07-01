@@ -1006,14 +1006,15 @@ color: var(--color\-belyy-100);
 
 .hero__marquee {
     display: none;
-    padding: 0 40px;
-    box-sizing: border-box;
 }
 
 .hero__marquee-slider {
     overflow: hidden;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
+    width: 100%;
+}
+
+.hero__marquee .hero__button {
+    margin: 0 40px;
 }
 
 .hero__marquee-slider .swiper-wrapper {
