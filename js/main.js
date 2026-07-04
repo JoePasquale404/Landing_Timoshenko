@@ -1,3 +1,30 @@
+// Scroll-triggered animations
+(function() {
+    const els = document.querySelectorAll(
+        // About section
+        '.about__photo--primary, .about__photo--secondary, .about__title, .about__text, .about__text--accent, .about__button,' +
+        // Cases section
+        '.cases__title, .cases__card,' +
+        // Posters section
+        '.posters__title, .posters__slider,' +
+        // Services section
+        '.services__title, .services__card, .services__button,' +
+        // Stages section
+        '.stages__title, .stages__card, .stages__divider, .stages__card--bottom'
+    );
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    els.forEach(el => observer.observe(el));
+})();
+
 // Burger menu
 (function() {
     const burgerBtn = document.querySelector('.burger-btn');
