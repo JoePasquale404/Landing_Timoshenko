@@ -1165,7 +1165,9 @@ color: var(--color\-belyy-100);
     opacity: 0.7;
 }
 
- .site-footer{display: none;}
+.site-footer__mobile {
+    display: none;
+}
 
 /* Burger button — скрыт на десктопе */
 .burger-btn {
@@ -1637,6 +1639,32 @@ color: var(--color\chernyy-100);
     
 }
 @media (max-width: 700px){
+    .site-footer {
+        display: none;
+    }
+    .site-footer__mobile {
+        display: block;
+        padding-bottom: 24px;
+        text-align: center;
+    }
+    .site-footer__mobile .footer__policy {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--color\chernyy-100);
+
+        display: inline-block;
+        margin-bottom: 24px;
+        cursor: pointer;
+    }
+    .site-footer__mobile .footer__meta-note {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--color\chernyy-100);
+        text-align: center;
+        margin: 0;
+    }
 }
 .posters__header{flex-direction: column;text-align: center;    margin-bottom: 16px; }
 .posters__title{font-size: 24px;margin-bottom: 24px;}
@@ -1700,6 +1728,7 @@ font-size: 20px;}
   .stages__card-title,.stages__card-desc {margin-left: 16px;}
      .stages__card--bottom .stages__card-desc {margin-left: 16px;}
      .stages__card--bottom .stages__card-title{margin-left: 16px;}
+     .contacts__wrapper {margin-bottom: 36px;}
 @media (max-width: 450px) {
     .hero__center {
         top: -120px;
