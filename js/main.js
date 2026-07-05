@@ -127,9 +127,10 @@ new Swiper('.posters__slider', {
         btn.addEventListener('click', function() {
             var fullSrc = btn.getAttribute('data-full');
             if (fullSrc) {
-                img.src = fullSrc;
+                img.src = '';
                 lightbox.classList.add('active');
                 document.body.style.overflow = 'hidden';
+                img.src = fullSrc;
             }
         });
     });

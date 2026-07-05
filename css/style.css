@@ -36,6 +36,7 @@ box-sizing: border-box;
     background-color: #ffffff;
     top: 0;
     position: relative;
+        z-index: 1; 
 }
 
 .header-container {
@@ -1327,7 +1328,7 @@ color: var(--color\-belyy-100);
   .stages__title{font-size: 70px;}
   .contacts__heading{font-size: 70px;}
   .stages__list{flex-direction: column;}
-  .stages__list--bottom{flex-direction: column;}
+  .stages__list--bottom{flex-direction: column;margin: 0px 7px 0px 7px;}
     .stages__card--bottom:first-child{width: 100%;}
 .stages__card{margin-top: 36px;}
   .stages__card,
@@ -1338,6 +1339,7 @@ color: var(--color\-belyy-100);
   }
   .stages__card:first-child {
     border-left: 1px dashed var(--color\siniy);
+    
   }
   .stages__card:last-child {
     border-right: 1px dashed var(--color\siniy);
@@ -1757,7 +1759,7 @@ font-size: 20px;}
     .hero__center {
         top: -130px;
     }
-    .stages__list{margin-top: 0px;}
+    .stages__list{margin: 0px 7px 0px 7px;}
     .contacts__form{gap: 12px;}
     .contacts__checkbox-custom {width: 20px; height: 20px;}
     .contacts__checkbox-custom svg {width: 11px; height: 10px;}
@@ -1769,8 +1771,13 @@ font-size: 20px;}
     text-align: right;
     margin-right: 16px;
   }
+  .stages__card:last-child .stages__card-title,
+  .stages__card--bottom:nth-child(2) .stages__card-title {
+    text-align: right;
+    margin-right: 16px;
+  }
   .stages__card-title,.stages__card-desc {margin-left: 16px;}
-     .stages__card--bottom .stages__card-desc {margin-left: 16px;}
+     .stages__card--bottom .stages__card-desc {margin-left: 16px;}  
      .stages__card--bottom .stages__card-title{margin-left: 16px;}
      .contacts__wrapper {margin-bottom: 36px;}
 @media (max-width: 450px) {
