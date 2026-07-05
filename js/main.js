@@ -10,7 +10,9 @@
         // Services section
         '.services__title, .services__card, .services__button,' +
         // Stages section
-        '.stages__title, .stages__card, .stages__divider, .stages__card--bottom'
+        '.stages__title, .stages__card, .stages__divider, .stages__card--bottom,' +
+        // Contacts section
+        '.contacts__heading, .contacts__desc, .contacts__form, .contacts__socials'
     );
 
     const observer = new IntersectionObserver((entries) => {

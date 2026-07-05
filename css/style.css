@@ -933,6 +933,27 @@ color: var(--color\chernyy-100);
     transform: none;
 }
 
+/* Contacts section scroll-triggered animation */
+.contacts__heading,
+.contacts__desc,
+.contacts__form,
+.contacts__socials {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.contacts__heading { transition-delay: 0.1s; }
+.contacts__desc { transition-delay: 0.2s; }
+.contacts__form { transition-delay: 0.3s; }
+.contacts__socials { transition-delay: 0.4s; }
+.contacts__heading.animate,
+.contacts__desc.animate,
+.contacts__form.animate,
+.contacts__socials.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* CONTACTS SECTION//////////////////////////////////////////////////////////// */
 
 .contacts {
@@ -1144,7 +1165,7 @@ color: var(--color\-belyy-100);
     opacity: 0.7;
 }
 
-.contacts, .site-footer{display: none;}
+ .site-footer{display: none;}
 
 /* Burger button — скрыт на десктопе */
 .burger-btn {
@@ -1225,6 +1246,9 @@ color: var(--color\-belyy-100);
     .hero__center{left: 10%;top: -64%;}
     .hero__right{height: 610px;}
     .hero__left{height: 610px;}
+    .contacts__input { padding: 16px 24px;}
+    .contacts__info {max-width: 100%;padding-right: 0px}
+    ;
 }
 @media (max-width: 1280px) {
    .hero__tag{margin-right: 20px;}
@@ -1259,6 +1283,7 @@ color: var(--color\-belyy-100);
   .stages__card--bottom .stages__card-title {font-size: 20px;}
   .stages__card-title {font-size: 20px;}
   .stages__title{font-size: 70px;}
+  .contacts__heading{font-size: 70px;}
   .stages__list{flex-direction: column;}
   .stages__list--bottom{flex-direction: column;}
     .stages__card--bottom:first-child{width: 100%;}
@@ -1324,6 +1349,7 @@ color: var(--color\-belyy-100);
     .stages__card--bottom{margin-right: 0px; margin-top: 31px;}
     .stages__card--bottom .stages__card-title{margin-top: 0px;}
     .stages__card--bottom .stages__card-desc{margin-bottom: 39px;}
+    .contacts__desc{font-size: 20px;}
 }
 
 @media (max-width: 1070px) {
@@ -1389,6 +1415,7 @@ color: var(--color\-belyy-100);
     .about__button {
         order: 5;
     }
+    .contacts__input{font-size: 20px;}
 }
 
 
@@ -1436,7 +1463,7 @@ color: var(--color\-belyy-100);
     .about__title{font-size: 60px;}
     .services__title{font-size: 60px;}
     .stages__title{font-size: 60px;}
-
+    .contacts__heading{font-size: 60px;}
 
 
 
@@ -1453,7 +1480,7 @@ color: var(--color\-belyy-100);
 .btn-hover{width: 50px;height: 50px;}
 }
 .cases__card img{max-width: initial;}
-    .stages{padding: 20px 0px 20px;}
+    .stages{padding: 20px 0px 64px;}
     .stages__list{margin-top: 0px;}
 @media (max-width: 800px) {
     .header-nav ul {
@@ -1583,7 +1610,13 @@ color: var(--color\chernyy-100);
     .hero__center {
         top: -193px;
     }
-   
+    .contacts__wrapper{flex-direction: column;}
+    .contacts__info{display: contents;}
+    .contacts__info-top{align-items: center;gap: 36px; order: 0;}
+    .contacts__desc{text-align: center;}
+    .contacts__form{order: 1;}
+    .contacts__socials{order: 2;}
+   .contacts__wrapper{align-items: center;gap: 24px;}
         
 }
 @media (max-width: 650px) {
@@ -1599,7 +1632,9 @@ color: var(--color\chernyy-100);
         .stages__title {
         font-size: 36px;text-align: center;
     }
+        .contacts__heading{font-size: 36px;}
     .services__title{margin-bottom: 36px;}
+    
 }
 @media (max-width: 700px){
 }
@@ -1652,8 +1687,19 @@ font-size: 20px;}
         top: -130px;
     }
     .stages__list{margin-top: 0px;}
-
-}
+    .contacts__form{gap: 12px;}
+    .contacts__checkbox-custom {width: 20px; height: 20px;}
+    .contacts__checkbox {gap: 14px;align-items: center;}
+    .stages__card--bottom{   height: 167px;}
+        .stages__card{   height: 167px;}
+  .stages__card:last-child .stages__card-desc,
+  .stages__card--bottom:nth-child(2) .stages__card-desc {
+    text-align: right;
+    margin-right: 16px;
+  }
+  .stages__card-title,.stages__card-desc {margin-left: 16px;}
+     .stages__card--bottom .stages__card-desc {margin-left: 16px;}
+     .stages__card--bottom .stages__card-title{margin-left: 16px;}
 @media (max-width: 450px) {
     .hero__center {
         top: -120px;
@@ -1680,4 +1726,3 @@ font-size: 20px;}
 
 
 
-}
