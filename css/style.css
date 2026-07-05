@@ -1760,6 +1760,7 @@ font-size: 20px;}
     .stages__list{margin-top: 0px;}
     .contacts__form{gap: 12px;}
     .contacts__checkbox-custom {width: 20px; height: 20px;}
+    .contacts__checkbox-custom svg {width: 11px; height: 10px;}
     .contacts__checkbox {gap: 14px;align-items: center;}
     .stages__card--bottom{   height: 167px;}
         .stages__card{   height: 167px;}
