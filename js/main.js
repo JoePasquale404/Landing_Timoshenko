@@ -116,3 +116,38 @@ new Swiper('.posters__slider', {
     initMarquee();
     window.addEventListener('resize', initMarquee);
 })();
+
+// Lightbox
+(function() {
+    const lightbox = document.getElementById('lightbox');
+    const overlay = lightbox.querySelector('.lightbox__overlay');
+    const img = lightbox.querySelector('.lightbox__img');
+
+    document.querySelectorAll('.cases__card-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            var fullSrc = btn.getAttribute('data-full');
+            if (fullSrc) {
+                img.src = fullSrc;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+    });
+
+    function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    lightbox.addEventListener('click', function(e) {
+        if (!e.target.closest('.lightbox__content')) {
+            closeLightbox();
+        }
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+            closeLightbox();
+        }
+    });
+})();
