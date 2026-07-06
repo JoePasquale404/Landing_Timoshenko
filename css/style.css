@@ -36,7 +36,7 @@ box-sizing: border-box;
     background-color: #ffffff;
     top: 0;
     position: relative;
-        z-index: 5001; 
+            z-index: 1;
 }
 
 .header-container {
@@ -1556,6 +1556,10 @@ color: var(--color\-belyy-100);
         display: none;
     }
 
+    .site-header {
+        z-index: auto;
+    }
+
     .burger-btn {
         display: flex;
         align-items: center;
@@ -1563,6 +1567,7 @@ color: var(--color\-belyy-100);
         position: relative;
         z-index: 4001;
     }
+    
 
     /* Mobile menu */
     .mobile-menu {
