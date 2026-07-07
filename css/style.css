@@ -1687,33 +1687,7 @@ color: var(--color-dark);
     .services__title{margin-bottom: 36px;}
     
 }
-@media (max-width: 700px){
-    .site-footer {
-        text-align: center;
-        padding-bottom: 24px;
-    }
-    .site-footer .footer__top {
-        display: none;
-    }
-    .site-footer .footer__divider {
-        display: none;
-    }
-    .site-footer .footer__bottom {
-        display: none;
-    }
-    .footer__mobile-meta {
-        display: block;
-    }
-    .footer__meta-note {
-        font-family: var(--font-family);
-        font-weight: 400;
-        font-size: 16px;
-        color: var(--color-dark);
-        text-align: center;
-        margin: 0;
-        margin-top: 24px;
-    }
-}
+
 @media (max-width: 900px) {
     .posters__header{flex-direction: column;text-align: center;margin-bottom: 16px;}
     .posters__title{font-size: 24px;margin-bottom: 24px;}
@@ -1726,7 +1700,42 @@ color: var(--color-dark);
     .posters__card img {margin-bottom: 44px;}
     .services__button{height: 46px; font-size: 20px;}
 }
-
+@media (max-width: 700px){
+    .contacts__wrapper {
+        padding-bottom: 12px;
+    }
+    .site-footer {
+        background: var(--color-light);
+        text-align: center;
+        padding: 0px 0px 24px;
+    }
+    .site-footer .footer__top {
+        display: none;
+            margin-top: 36px;
+    }
+    .site-footer .footer__divider {
+        display: none;
+    }
+    .site-footer .footer__bottom {
+        display: block;
+        padding: 0;
+        margin-bottom: 24px;
+    }
+    .footer__policy {
+        color: var(--color-dark);
+    }
+    .footer__mobile-meta {
+        display: block;
+    }
+    .footer__meta-note {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--color-dark);
+        text-align: center;
+        margin: 0;
+    }
+}
 
 
 @media (max-width: 600px) {
@@ -1777,7 +1786,7 @@ font-size: 20px;}
   .stages__card-title,.stages__card-desc {margin-left: 16px;}
      .stages__card--bottom .stages__card-desc {margin-left: 16px;}  
      .stages__card--bottom .stages__card-title{margin-left: 16px;}
-     .contacts__wrapper {margin-bottom: 36px;}
+     .contacts__wrapper {margin-bottom: 36px;padding-bottom: 0px;}
 @media (max-width: 450px) {
     .hero__center {
         top: -120px;
